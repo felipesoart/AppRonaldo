@@ -1,0 +1,14 @@
+[
+    {
+    "icone": "home",
+    "name": "Home",
+    "link": "/home"
+  },
+  
+  {
+    "icone": "person-add",
+    "name": "Agendamento",
+    "link": "/add-cliente"
+  }
+
+]

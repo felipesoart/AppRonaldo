@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="Cliente()">
+      <ion-button color="primary">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>mostrarCliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Clientes:</ion-card-subtitle>
+      <ion-card-title>{{nome}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Telefone: {{telefone}} <br>
+      E-mail: {{email}} <br>
+      Data do passeio: {{datapasseio}}; <br>
+      Horario: {{horario}}; <br>
+      Ponto de embarque: {{pontoembarque}}; <br>
+      Destino: {{destino}}; <br>
+      Quantidade de passageiros: {{qntpassageiros}}; <br>
+      Valor: {{valor}}; <br>
+      Descrição: {{descricao}};
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

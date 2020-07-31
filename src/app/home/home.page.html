@@ -1,0 +1,56 @@
+<app-header titulo="Via Jeri Turismo" subtitulo="CUIDANDO - DIVERSÃO - MEMÓRIAS"></app-header>
+
+<!-- conteudo do site -->
+<ion-content>
+
+  <section class="ajuste-center-page">
+  <ion-row>
+		<ion-col>
+      <ion-button size="small" (click)="fn_btn(1)">Lado leste</ion-button>
+			<!-- <div (click)="fn_btn(1)">Botão 1</div> -->
+		</ion-col>
+		<ion-col>
+      <ion-button size="small" color="secondary" (click)="fn_btn(2)">Lado Oeste</ion-button>
+			<!-- <div (click)="fn_btn(2)">Botão 2</div> -->
+		</ion-col>
+		<ion-col>
+      <ion-button size="small" color="secondary" (click)="fn_btn(3)">Serviço</ion-button>
+			<!-- <div (click)="fn_btn(3)">Botão 3</div> -->
+		</ion-col>
+  </ion-row>
+</section>
+
+	<ion-content *ngIf="op.op1">    
+    <app-ladoLeste></app-ladoLeste>  
+  </ion-content>
+
+	<ion-content *ngIf="op.op2">
+		<app-ladoOeste></app-ladoOeste>
+  </ion-content>
+  
+	<ion-content *ngIf="op.op3">
+		<app-servecos></app-servecos>
+	</ion-content>
+ 
+
+</ion-content>
+
+
+<!-- menu base padding-end -->
+<ion-footer>
+  <ion-item>
+
+
+
+    <ion-tab-button (click)="logout()">
+      <ion-icon color="tertiary" name="log-in-outline"></ion-icon>
+      <ion-label color="tertiary">Login</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button href="https://api.whatsapp.com/send?phone=558899333392">
+      <ion-icon color="tertiary" name="logo-whatsapp"></ion-icon>
+    </ion-tab-button>
+
+
+  </ion-item>
+</ion-footer>
